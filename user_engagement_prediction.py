@@ -22,7 +22,7 @@ platform = st.radio("Choose Platform:", ["Website", "App"])
 if platform == "Website":
     features = st.multiselect("Select Website Features:", df['Website Feature'].unique())
 else:
-    features = st.multiselect("Select App Features:", df['App Feature'].unique())
+    features = st.multiselect("Select App Features:", df['Ap Feature'].unique())
 
 # Calculate and display engagement prediction
 if st.button("Predict Engagement"):
