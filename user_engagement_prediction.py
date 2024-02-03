@@ -27,4 +27,4 @@ else:
 # Calculate and display engagement prediction
 if st.button("Predict Engagement"):
     engagement_score = predict_engagement(features)
-    st.success(f"{engagement_score}")
+    # st.success(f"{engagement_score}")
