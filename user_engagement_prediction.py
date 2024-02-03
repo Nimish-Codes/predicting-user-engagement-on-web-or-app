@@ -17,7 +17,6 @@ st.title("Digital Marketing Engagement Predictor")
 
 # User chooses between website and app features
 platform = st.radio("Choose Platform:", ["Website", "App"])
-st.write(df.columns)
 
 # Strip whitespaces from the column names
 df.columns = df.columns.str.strip()
