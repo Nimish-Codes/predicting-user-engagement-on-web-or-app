@@ -19,6 +19,9 @@ st.title("Digital Marketing Engagement Predictor")
 platform = st.radio("Choose Platform:", ["Website", "App"])
 st.write(df.columns)
 
+# Strip whitespaces from the column names
+df.columns = df.columns.str.strip()
+
 # Display multi-select based on the chosen platform
 if platform == "Website":
     features = st.multiselect("Select Website Features:", df['Website Feature'].unique())
