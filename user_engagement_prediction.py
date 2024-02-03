@@ -17,6 +17,7 @@ st.title("Digital Marketing Engagement Predictor")
 
 # User chooses between website and app features
 platform = st.radio("Choose Platform:", ["Website", "App"])
+print(df.columns)
 
 # Display multi-select based on the chosen platform
 if platform == "Website":
