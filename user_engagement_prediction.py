@@ -11,7 +11,7 @@ def predict_engagement(selected_features):
     if engagement_score > 20:
         return st.success("Well done! It's user engaging.")
     else:
-        st.write("Not much engaging need to improve.")
+        return st.write("Not much engaging need to improve.")
 
 st.title("Digital Marketing Engagement Predictor")
 
