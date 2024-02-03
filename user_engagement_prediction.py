@@ -9,9 +9,9 @@ def predict_engagement(selected_features):
     # Dummy function for predicting engagement score
     engagement_score = len(selected_features)
     if engagement_score > 20:
-        return st.success("Well done! It's user engaging.")
+        return "Well done! It's user engaging."
     else:
-        return st.write("Not much engaging need to improve.")
+        return "Not much engaging. Need to improve."
 
 st.title("Digital Marketing Engagement Predictor")
 
@@ -28,4 +28,4 @@ else:
 # Calculate and display engagement prediction
 if st.button("Predict Engagement"):
     engagement_score = predict_engagement(features)
-    # st.success(f"{engagement_score}")
+    st.success(engagement_score)
