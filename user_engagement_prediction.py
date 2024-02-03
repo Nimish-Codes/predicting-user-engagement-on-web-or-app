@@ -8,7 +8,7 @@ df = pd.read_csv('features.csv')
 def predict_engagement(selected_features):
     # Dummy function for predicting engagement score
     engagement_score = len(selected_features)
-    if engagement score > 20:
+    if engagement_score > 20:
         return st.success("Well done! It's user engaging.")
     else:
         st.failure("Not much engaging need to improve.")
